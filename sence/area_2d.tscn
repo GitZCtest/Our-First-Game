@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvcieee0wtrsj"]
+
+[ext_resource type="Script" uid="uid://wmyttuhrnr0x" path="res://area_2d.gd" id="1_qodo6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_161gd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aam4w"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_qodo6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_161gd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_aam4w")
